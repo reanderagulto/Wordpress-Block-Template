@@ -3,12 +3,27 @@
 	"apiVersion": 2,
 	"name": "create-block/gutenberg-block-template",
 	"version": "0.1.0",
-	"title": "Gutenberg Block Template",
+	"title": "Template Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Gutenberg Block Template Example",
 	"supports": {
 		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type"		: "string", 
+			"default"	: "Sample Title"
+		},
+		"subtitle": {
+			"type"		: "string", 
+			"default"	: "Sample Subtitle"
+		},
+		"content": {
+			"type"		: "string", 
+			"default"	: "Sample Content"
+		}
+		
 	},
 	"textdomain": "gutenberg-block-template",
 	"editorScript": "file:./index.js",
